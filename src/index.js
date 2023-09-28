@@ -10,7 +10,8 @@ import Contact from './components/Contact/Contact.js'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path='/' element={<Layout/>}>
+    <Route exact path='/routes-demo' element={<Layout/>}>
+      {/* <Route path='/' element={<Layout/>}></Route> */}
       <Route path='' element={<Home />} />
       <Route path='about' element={<About />} />
       <Route path='contact' element={<Contact />} />
